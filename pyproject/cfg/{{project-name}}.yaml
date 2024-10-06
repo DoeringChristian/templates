@@ -1,0 +1,5 @@
+experiment: 
+name:
+run:
+
+outdir: out/${experiment}/${run}/${name}
