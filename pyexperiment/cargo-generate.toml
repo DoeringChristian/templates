@@ -1,2 +1,0 @@
-[placeholders]
-experiment_name = { prompt = "Experiment Name", default = "experiment", type = "string" }
