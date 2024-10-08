@@ -1,7 +1,9 @@
 DOCKERIMG=texlive/texlive:latest
 DOCKERCMD=podman
-CONTAINER=texlive
 DOCKEREXEC=$(DOCKERCMD) exec $(CONTAINER) sh -c
+
+PWD_HASH := $(shell PWD | md5sum | awk '{print $$1}')
+CONTAINER := latex_$(PWD_HASH)
 
 image:
 	$(DOCKERCMD) build -t $(DOCKERIMG) .
