@@ -2,5 +2,6 @@
     "project_name": "Project",
     "__project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "experiment_name": "experiment",
-    "__experiment_slug": "{{ cookiecutter.experiment_name.lower().replace(' ', '_') }}"
+    "__experiment_slug": "{{ cookiecutter.experiment_name.lower().replace(' ', '_') }}",
+    "conda_env": "neural"
 }
