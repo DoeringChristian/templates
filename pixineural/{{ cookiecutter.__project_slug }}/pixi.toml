@@ -21,13 +21,17 @@ pip = ">=24.2,<25"
 
 cuda = "*" 
 
+ipython = ">=8.28.0,<9"
+matplotlib = ">=3.9.2,<4"
+numpy = ">=2.1.2,<3"
+
 [pypi-options]
 no-build-isolation = ["tinycudann"]
 
 [pypi-dependencies]
 tensorboardx = "*"
 mitsuba = ">=3.5.2, <4"
-tinycudann = { git = "https://github.com/NVlabs/tiny-cuda-nn.git", subdirectory = "bindings/torch" }
+tinycudann = { git = "https://github.com/NVlabs/tiny-cuda-nn.git", subdirectory = "bindings/torch", rev = "c91138bcd4c6877c8d5e60e483c0581aafc70cce"}
 
 [target.linux-64.activation.env]
 # Have to expose /lib64 for libcuda.so (cuda driver)
