@@ -1,4 +1,3 @@
-
 [project]
 authors = ["Christian Döring <christian.doering@tum.de>"]
 channels = ["nvidia/label/cuda-12.4.0", "nvidia", "conda-forge", "pytorch"]
