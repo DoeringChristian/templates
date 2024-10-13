@@ -23,6 +23,7 @@ cuda = "*"
 ipython = ">=8.28.0,<9"
 matplotlib = ">=3.9.2,<4"
 numpy = ">=2.1.2,<3"
+omegaconf = ">=2.3.0,<3"
 
 [pypi-options]
 no-build-isolation = ["tinycudann"]

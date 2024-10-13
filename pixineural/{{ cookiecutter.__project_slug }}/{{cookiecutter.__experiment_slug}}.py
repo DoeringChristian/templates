@@ -19,7 +19,7 @@ def experiment(cfg: DictConfig):
 def run(params: dict):
     cfg = OmegaConf.load("cfg/{{cookiecutter.__experiment_slug}}.yaml")
     cfg.update(params.items())
-    cfg.update([("run", f"{now}"), ("experiment", Path(__file__).stem)])
+    cfg.update([("run", f"{now}"), ("experiment", Path(os.getcwd()).stem)])
 
     for k, v in params.items():
         if k == "name":
