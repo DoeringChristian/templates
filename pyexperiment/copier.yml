@@ -1,0 +1,3 @@
+experiment_name:
+  type: str
+  help: Name of the experiment
