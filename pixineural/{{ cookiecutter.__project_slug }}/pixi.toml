@@ -30,7 +30,7 @@ no-build-isolation = ["tinycudann"]
 
 [pypi-dependencies]
 tensorboardx = "*"
-mitsuba = ">=3.5.2, <4"
+mitsuba = ">=3.6.0, <4"
 tinycudann = { git = "https://github.com/NVlabs/tiny-cuda-nn.git", subdirectory = "bindings/torch", rev = "c91138bcd4c6877c8d5e60e483c0581aafc70cce" }
 
 [target.linux-64.activation.env]
