@@ -4,5 +4,8 @@
     "author": "ChristianDöring",
     "email": "christian.doering@tum.de",
     "advisor": "",
-    "advisor_email": ""
+    "advisor_email": "",
+    "_copy_without_render": [
+        "*.sty"
+    ]
 }
