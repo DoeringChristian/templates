@@ -6,6 +6,7 @@
     "advisor": "",
     "advisor_email": "",
     "_copy_without_render": [
-        "*.sty"
+        "*.sty",
+        "figures"
     ]
 }
