@@ -1,5 +1,7 @@
 \documentclass[10pt, t]{beamer}
 
+\usetheme{lmtslides}
+
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[english, german]{babel}
@@ -7,20 +9,34 @@
 
 \graphicspath{{"{{"}}figures/{{"}}"}}
 
+% SET LANGUAGE HERE! (Babel is already included and setup by this call.)
+%\setlang{de}		% <- GERMAN
+\setlang{en}		% <- ENGLISH
+
 \usetheme{default}
 \setbeamertemplate{itemize items}[circle]
 \setbeameroption{show notes on second screen=right} % Both
 
 \title{ {{cookiecutter.project_name}} }
 \author{ {{cookiecutter.author}} }
+\type{S} % (M/B/D/S)(f/m): (Master/Bachelor/Diplom/Studienarbeit)(final/midterm)
+\email{ {{cookiecutter.email}} }
+\advisor{ {{cookiecutter.advisor}} }
+\emailAdvisor{ {{cookiecutter.advisor_email}} }
 \date{\today}
-
 
 \begin{document}
 
+\AddToShipoutPicture{\TitlePicture}
+\maketitle
+
+\ClearShipoutPicture
+\AddToShipoutPicture{\BackgroundPicture}
+
 \begin{frame}
-	\maketitle
+	\frametitle{First Frame}
 \end{frame}
+
 
 \begin{acronym}
 	\acro{identifier}{short}{long}
