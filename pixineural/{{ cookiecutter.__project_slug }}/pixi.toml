@@ -13,9 +13,9 @@ python = "3.12.*"
 gcc = { version = "13.2.*", channel = "conda-forge" }
 gxx = { version = "13.2.*", channel = "conda-forge" }
 pytorch-cuda = { version = "12.4.*", channel = "pytorch" }
-pytorch = { version = ">=2.4.1,<3", channel = "pytorch" }
-torchvision = { version = ">=0.19.1,<0.20", channel = "pytorch" }
-torchaudio = { version = ">=2.4.1,<3", channel = "pytorch" }
+pytorch = { version = "2.5.0", channel = "pytorch" }
+torchvision = { version = "0.20.0", channel = "pytorch" }
+torchaudio = { version = "2.5.0", channel = "pytorch" }
 pip = ">=24.2,<25"
 
 cuda = "*"
