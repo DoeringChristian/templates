@@ -17,7 +17,7 @@ def experiment(cfg: DictConfig):
 
 
 def run(params: dict):
-    cfg = OmegaConf.load("cfg/{{cookiecutter.__experiment_slug}}.yaml")
+    cfg = OmegaConf.load(f"cfg/{Path(__file__).stem}.yaml")
     cfg.update(params.items())
     cfg.update([("run", f"{now}"), ("experiment", Path(__file__).stem)])
 
