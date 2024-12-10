@@ -2,6 +2,7 @@ from omegaconf import OmegaConf, DictConfig
 from datetime import datetime
 from pathlib import Path
 import os
+from tensorboardX import SummaryWriter
 
 now = datetime.now()
 now = now.strftime("%Y%m%d-%H%M%S")
@@ -12,6 +13,9 @@ def experiment(cfg: DictConfig):
     print(cfg_yaml)
     os.makedirs(f"{cfg.outdir}/", exist_ok=True)
     OmegaConf.save(cfg, f"{cfg.outdir}/config.yaml", resolve=True)
+
+    writer = SummaryWriter(f"{cfg.outdir}")
+    writer.add_text("config", cfg_yaml)
 
     ...
 
