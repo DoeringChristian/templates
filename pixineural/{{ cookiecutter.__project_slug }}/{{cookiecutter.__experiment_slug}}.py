@@ -28,7 +28,10 @@ def run(params: dict):
     for k, v in params.items():
         if k == "params":
             continue
-        cfg.params = f"{cfg.params} {k}={v}"
+        if cfg.params == "":
+            cfg.params = f"{k}={v}"
+        else:
+            cfg.params = f"{cfg.params} {k}={v}"
 
     return experiment(cfg)
 
