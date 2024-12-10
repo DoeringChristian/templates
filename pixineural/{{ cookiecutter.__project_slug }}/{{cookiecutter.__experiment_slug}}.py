@@ -19,12 +19,12 @@ def experiment(cfg: DictConfig):
 def run(params: dict):
     cfg = OmegaConf.load(f"cfg/{Path(__file__).stem}.yaml")
     cfg.update(params.items())
-    cfg.update([("run", f"{now}"), ("experiment", Path(__file__).stem)])
+    cfg.update([("date", f"{now}"), ("experiment", Path(__file__).stem)])
 
     for k, v in params.items():
-        if k == "name":
+        if k == "params":
             continue
-        cfg.name = f"{cfg.name} {k}={v}"
+        cfg.params = f"{cfg.params} {k}={v}"
 
     return experiment(cfg)
 
