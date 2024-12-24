@@ -17,6 +17,7 @@ pytorch = { version = "2.5.0", channel = "pytorch" }
 torchvision = { version = "0.20.0", channel = "pytorch" }
 torchaudio = { version = "2.5.0", channel = "pytorch" }
 pip = ">=24.2,<25"
+ninja = "*"
 
 ipython = ">=8.28.0,<9"
 matplotlib = ">=3.9.2,<4"
@@ -36,4 +37,4 @@ cuda = "12.4"
 
 [target.linux-64.activation.env]
 # Have to expose /lib64 for libcuda.so (cuda driver)
-LIBRARY_PATH = "/lib64"
+LIBRARY_PATH = "/usr/lib/x86_64-linux-gnu:/lib64:$LIBRARY_PATH"
