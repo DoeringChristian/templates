@@ -1,10 +1,18 @@
-\documentclass[10pt, t]{article}
+\documentclass[times, 10pt, twocolumn]{article}
 
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage[english, german]{babel}
 \usepackage[nolist,nohyperlinks]{acronym}
 \usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{todonotes}
+\usepackage{xcolor}
+\usepackage{amsmath}
+
+\newcommand\chris[2][]{\todo[inline, caption={2do}, author = Christian, linecolor = red, bordercolor = red, backgroundcolor = red!25, #1]{
+\begin{minipage}{\textwidth-4pt}#2\end{minipage}}}
+\renewcommand\chris[2][]{}
 
 \graphicspath{{"{{"}}figures/{{"}}"}}
 
@@ -32,5 +40,7 @@
 \begin{acronym}
 	\acro{id}[ID]{Identifier}
 \end{acronym}
+
+\bibliography{main}
 
 \end{document}
