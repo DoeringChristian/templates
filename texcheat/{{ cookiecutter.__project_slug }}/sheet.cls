@@ -15,8 +15,8 @@
 
 \PassOptionsToClass{6pt, a4paper, landscape}{\baseclass}
 % forward unknown options to class
-\DeclareOption*{%
-	\PassOptionsToClass{\CurrentOption}{\baseclass}%
+\DeclareOption*{
+	\PassOptionsToClass{\CurrentOption}{\baseclass}
 }
 
 % Load Baseclass
