@@ -1,0 +1,5 @@
+experiment: 
+params: ""
+date:
+
+outdir: out/${experiment}/${date}/${params}
