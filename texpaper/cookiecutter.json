@@ -2,5 +2,5 @@
     "project_name": "Paper",
     "__project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "paper_name": "Paper",
-    "author": "ChristianDöring"
+    "author": "Christian Döring"
 }
